@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding:0;
+
+}
+body{
+	
+     background: #000 url(../img/timg.jpg) no-repeat fixed top;
+	background-origin:content-box;
+	background-size: 100%;
+	/*-webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+   /* filter: blur(5px);*/
+}
+.top{
+	height:40px;
+   
+
+   background: #080707
+  
+
+}
+.top .left{
+	float:left;
+	width:10%;
+
+
+}
+.top .right{
+	float:right;
+    width:90%;
+   
+}
+.top .left, .top .right{
+
+	height:40px;
+
+}
+.top .left h1{
+	font-size:16px;
+	color:#3FEB13;
+	line-height:40px;
+	text-indent:10px;
+
+}
+
+.top .right ul {
+	width:100%;
+	float:right;
+
+}
+.top .right li{
+    list-style:none;
+    display:inline-block;
+    height:40px;
+  
+
+     padding:0 10px;
+
+}
+
+.top .right li a{
+	display:block;
+	text-decoration:none;
+	color:#0EC1F1;
+	font-family:微软雅黑;
+	
+	padding:0 10px;
+	height:30px;
+	margin-top:5px;
+   
+}
+
+.top .right li a:hover{
+	box-shadow:0 0 8px rgba(10,255,0,1);
+	border-radius:4px;
+	transition:all 0.5s;
+	text-shadow:1px 1px 5px rgba(50,255,50,1);
+}
+
+.body-left{
+	position:fixed;
+    
+    top:40px;
+    left:0;
+    bottom:0;
+	width:300px;
+	background:#000;
+	border-radius:4px;
+	box-shadow:0 0 10px rgba(0,255,10,0.5);
+}
