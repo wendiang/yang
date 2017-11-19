@@ -4,22 +4,35 @@
 
 }
 body{
-	
+	width:100%;
+	height:100%;
+}
+.bg{
+	z-index:5;
+	position:absolute;
      background: #000 url(../img/timg.jpg) no-repeat fixed top;
 	background-origin:content-box;
-	background-size: 100%;
+	background-size: 90%;
+	height:100%;
+	filter:blur(5px);
 	/*-webkit-filter: blur(5px); /* Chrome, Safari, Opera */
    /* filter: blur(5px);*/
 }
 .top{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
 	height:40px;
    
-
+   z-index:1000;
    background: #080707
   
 
 }
 .top .left{
+	
+	
 	float:left;
 	width:10%;
 
@@ -79,12 +92,59 @@ body{
 
 .body-left{
 	position:fixed;
-    
+    z-index:500;
     top:40px;
     left:0;
     bottom:0;
-	width:300px;
+	width:280px;
 	background:#000;
 	border-radius:4px;
-	box-shadow:0 0 10px rgba(0,255,10,0.5);
+	box-shadow:0px 0px 20px rgba(10,255,10,0.6),inset 0px 0px 20px rgba(10,255,10,0.6);
+	color:#fff;
+	padding:10px;
+}
+
+.body-left ul{
+	width:100%;
+	height:100%;
+
+}
+.body-left ul li{
+	width:100%;
+	height:40px;
+	list-style:none;
+    box-shadow:1px 1px 5px rgba(10,255,10,0.5);
+
+}
+.body-left ul li a{
+	text-decoration:none;
+	color:#03BAFF;
+	display:block;
+	text-align:center;
+	line-height:40px;
+}
+.body-left ul li:hover{
+    box-shadow:1px 0px 5px rgba(0,0,0,0.5);
+
+}
+.body-left ul li a:hover{
+	color:#F01170;
+}
+
+.right-box{
+	width:1000px;
+	height:500px;
+	position:absolute;
+	z-index:600;
+	background:#000;
+	top:50%;
+	left:-100%;
+	margin-left:-500px;
+	margin-top:-250px;
+
+}
+
+.hover{
+	left:50%;
+	transition:all 1s;
 }
